@@ -26,7 +26,7 @@ export class TelemetryService {
   init(user: UserWithoutPassword) {
     this.flagService.getAllFlags().subscribe((flags) => {
       if (flags[ApFlagId.TELEMETRY_ENABLED] === true) {
-        posthog.init('phc_7F92HoXJPeGnTKmYv0eOw62FurPMRW9Aqr0TPrDzvHh', {
+        posthog.init('phc_5u8LLHpRASp2Olv4EebqTRJGuISjkTh3Ik36oOYTIwW', {
           autocapture: false,
         });
 

@@ -7,7 +7,7 @@ import { logger } from 'server-shared'
 
 const telemetryEnabled = system.getBoolean(SystemProp.TELEMETRY_ENABLED)
 
-const client = new PostHog('phc_7F92HoXJPeGnTKmYv0eOw62FurPMRW9Aqr0TPrDzvHh')
+const client = new PostHog('phc_5u8LLHpRASp2Olv4EebqTRJGuISjkTh3Ik36oOYTIwW')
 
 export const telemetry = {
     async identify(user: User, projectId: ProjectId): Promise<void> {

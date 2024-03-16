@@ -72,7 +72,7 @@ export const posthogCreateEvent = createAction({
 
     const request: HttpRequest<EventBody> = {
       method: HttpMethod.POST,
-      url: `https://app.posthog.com/capture/`,
+      url: `https://eu.posthog.com/capture/`,
       body,
       authentication: {
         type: AuthenticationType.BEARER_TOKEN,

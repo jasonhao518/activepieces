@@ -42,7 +42,7 @@ export const posthogCreateProject = createAction({
 
     const request: HttpRequest<ProjectCreateRequest> = {
       method: HttpMethod.POST,
-      url: `https://app.posthog.com/api/projects/`,
+      url: `https://eu.posthog.com/api/projects/`,
       body,
       authentication: {
         type: AuthenticationType.BEARER_TOKEN,
