@@ -28,6 +28,7 @@ export class TelemetryService {
       if (flags[ApFlagId.TELEMETRY_ENABLED] === true) {
         posthog.init('phc_5u8LLHpRASp2Olv4EebqTRJGuISjkTh3Ik36oOYTIwW', {
           autocapture: false,
+          api_host: 'https://eu.posthog.com',
         });
 
         if (flags[ApFlagId.ENVIRONMENT] === ApEnvironment.PRODUCTION) {

@@ -26,7 +26,7 @@ export const posthog = createPiece({
     posthogCreateEvent,
     posthogCreateProject,
     createCustomApiCallAction({
-      baseUrl: () => 'https://eu.posthog.com',
+      baseUrl: () => 'https://app.posthog.com',
       auth: posthogAuth,
       authMapping: (auth) => ({
         Authorization: `Bearer ${auth}`,
